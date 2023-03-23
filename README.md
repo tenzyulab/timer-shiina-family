@@ -1,1 +1,1 @@
-# https://cuckoo.team/
+We decided to use https://cuckoo.team/
