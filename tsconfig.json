@@ -1,0 +1,22 @@
+{
+  "extends": "@tenzyu/tsconfig/base.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src"],
+  "references": [
+    {
+      "path": "./tsconfig.vite.json"
+    }
+  ]
+}

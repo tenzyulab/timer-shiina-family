@@ -1,0 +1,52 @@
+{
+  "name": "timer-shiina-family",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "rimraf dist && tsc && vite build",
+    "dev": "vite",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install",
+    "preview": "vite preview"
+  },
+  "lint-staged": {
+    "*": "prettier --write --cache --ignore-unknown",
+    "*.{ts,tsx}": "eslint --fix",
+    "package.json": "sort-package-json"
+  },
+  "dependencies": {
+    "@joebobmiles/y-react": "^1.2.0",
+    "@js-temporal/polyfill": "^0.4.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.9.0",
+    "react-toastify": "^9.1.2",
+    "y-websocket": "^1.5.0",
+    "yjs": "^13.5.51"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.5.0",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@tenzyu/tsconfig": "^0.1.4",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.6",
+    "rimraf": "^3.0.2",
+    "sort-package-json": "^2.4.1",
+    "typescript": "^4.9.5",
+    "vite": "^4.2.1"
+  }
+}
